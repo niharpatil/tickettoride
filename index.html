@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nets Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+  <script type="text/javascript">
+     $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+</head>
+<body>
+   <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Ticket to Ride!</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+    <form method="POST" action="/selectcities">
+    <div class="row">
+      <div class="input-field col s6">
+        <select name="first_city">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="Charleston">Charleston</option>
+          <option value="Oklahoma City">Oklahoma City</option>
+          <option value="Vancouver">Vancouver</option>
+          <option value="Duluth">Duluth</option>
+          <option value="Portland">Portland</option>
+          <option value="St. Louis">St. Louis</option>
+          <option value="Washington">Washington</option>
+          <option value="Omaha">Omaha</option>
+          <option value="Winnipeg">Winnipeg</option>
+          <option value="Atlanta">Atlanta</option>
+          <option value="Helena">Helena</option>
+          <option value="New Orleans">New Orleans</option>
+          <option value="Phoenix">Phoenix</option>
+          <option value="Sault St. Marie">Sault St. Marie</option>
+          <option value="Salt Lake City">Salt Lake City</option>
+          <option value="Denver">Denver</option>
+          <option value="St. Louis">St. Louis</option>
+          <option value="Dallas">Dallas</option>
+          <option value="Las Vegas">Las Vegas</option>
+          <option value="Boston">Boston</option>
+          <option value="Pittsburgh">Pittsburgh</option>
+          <option value="New York">New York</option>
+          <option value="Kansas City">Kansas City</option>
+          <option value="Seattle">Seattle</option>
+          <option value="Raleigh">Raleigh</option>
+          <option value="El Paso">El Paso</option>
+          <option value="Chicago">Chicago</option>
+          <option value="Calgary">Calgary</option>
+          <option value="Nashville">Nashville</option>
+          <option value="Miami">Miami</option>
+          <option value="Santa Fe">Santa Fe</option>
+          <option value="San Francisco">San Francisco</option>
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="Little Rock">Little Rock</option>
+          <option value="Montreal">Montreal</option>
+          <option value="Toronto">Toronto</option>
+          <option value="Houston">Houston</option>
+        </select>
+        <label>Select First City</label>
+      </div>
+      <div class="input-field col s6">
+        <select name="second_city">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="Charleston">Charleston</option>
+          <option value="Oklahoma City">Oklahoma City</option>
+          <option value="Vancouver">Vancouver</option>
+          <option value="Duluth">Duluth</option>
+          <option value="Portland">Portland</option>
+          <option value="St. Louis">St. Louis</option>
+          <option value="Washington">Washington</option>
+          <option value="Omaha">Omaha</option>
+          <option value="Winnipeg">Winnipeg</option>
+          <option value="Atlanta">Atlanta</option>
+          <option value="Helena">Helena</option>
+          <option value="New Orleans">New Orleans</option>
+          <option value="Phoenix">Phoenix</option>
+          <option value="Sault St. Marie">Sault St. Marie</option>
+          <option value="Salt Lake City">Salt Lake City</option>
+          <option value="Denver">Denver</option>
+          <option value="St. Louis">St. Louis</option>
+          <option value="Dallas">Dallas</option>
+          <option value="Las Vegas">Las Vegas</option>
+          <option value="Boston">Boston</option>
+          <option value="Pittsburgh">Pittsburgh</option>
+          <option value="New York">New York</option>
+          <option value="Kansas City">Kansas City</option>
+          <option value="Seattle">Seattle</option>
+          <option value="Raleigh">Raleigh</option>
+          <option value="El Paso">El Paso</option>
+          <option value="Chicago">Chicago</option>
+          <option value="Calgary">Calgary</option>
+          <option value="Nashville">Nashville</option>
+          <option value="Miami">Miami</option>
+          <option value="Santa Fe">Santa Fe</option>
+          <option value="San Francisco">San Francisco</option>
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="Little Rock">Little Rock</option>
+          <option value="Montreal">Montreal</option>
+          <option value="Toronto">Toronto</option>
+          <option value="Houston">Houston</option>
+        </select>
+        <label>Select Second City</label>
+      </div>
+    </div>
+       <div class="row">
+         <div class="input-field col s2">
+          <input placeholder="Placeholder" value="0" id="red" name="red" type="number" class="validate">
+          <label for="red">Red</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Placeholder" value="0" id="white" name="white" type="number" class="validate">
+          <label for="white">White</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Placeholder" value="0" id="yellow" name="yellow" type="number" class="validate">
+          <label for="yellow">Yellow</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Placeholder" value="0" id="blue" name="blue" type="number" class="validate">
+          <label for="blue">Blue</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Placeholder" value="0" id="pink" name="pink" type="number" class="validate">
+          <label for="pink">Pink</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Placeholder" value="0" id="green" name="green" type="number" class="validate">
+          <label for="green">Green</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Placeholder" value="0" id="black" name="black" type="number" class="validate">
+          <label for="black">Black</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Placeholder" value="0" id="orange" name="orange" type="text" class="validate">
+          <label for="orange">Orange</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Placeholder" value="0" id="colorless" name="colorless" type="text" class="validate">
+          <label for="colorless">Rainbow</label>
+        </div>
+       </div>
+       <img src="/ticketboard.jpg">
+       <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+     </form>
+    </div>
+  </div>
+</body>
+</html>
